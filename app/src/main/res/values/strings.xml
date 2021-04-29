@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CEP</string>
+    <string name="buscar">Buscar</string>
+    <string name="cep">CEP</string>
+    <string name="title_cep">CEP</string>
+    <string name="google_maps">Ver sua rua no Google Maps</string>
+    <string name="title_maps_cep">Sua Rua</string>
+</resources>

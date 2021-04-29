@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/cepFragment"
+    >
+    <fragment
+        android:id="@+id/cepFragment"
+        android:name="br.com.cep.ui.cep.CepFragment"
+        android:label="@string/title_cep"
+        tools:layout="@layout/fragment_cep"
+        >
+
+
+        <action
+            android:id="@+id/action_cepFragment_to_mapsCepFragment"
+            app:destination="@id/mapsCepFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsCepFragment"
+        android:name="br.com.cep.ui.maps.MapsCepFragment"
+        android:label="@string/title_maps_cep"
+        tools:layout="@layout/fragment_maps_cep" >
+        <argument
+            android:name="latitude"
+            app:argType="string" />
+        <argument
+            android:name="longitude"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
